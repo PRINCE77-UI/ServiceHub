@@ -90,42 +90,6 @@ The main objectives of ServiceHub are:
 
 ---
 
-## 🏗️ System Architecture
-
-```text
-┌─────────────────────────────┐
-│          Users              │
-│  Customer | Provider | Admin│
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│       Razor Views            │
-│   HTML | CSS | Bootstrap     │
-└──────────────┬──────────────┘
-               │
-               ▼
-┌─────────────────────────────┐
-│     ASP.NET Core MVC         │
-│        C# Backend            │
-└──────────────┬──────────────┘
-               │
-        ┌──────┴───────┐
-        ▼              ▼
-┌─────────────┐  ┌─────────────┐
-│ Entity      │  │   ADO.NET   │
-│ Framework   │  │ Booking     │
-│ Core        │  │ Logic       │
-└──────┬──────┘  └──────┬──────┘
-       │                │
-       └───────┬────────┘
-               ▼
-      ┌─────────────────┐
-      │ Microsoft SQL   │
-      │ Server Database │
-      └─────────────────┘
-```
-
 ---
 
 ## 🛠️ Technology Stack
@@ -163,61 +127,6 @@ The database relationships will be designed to maintain data consistency and sup
 
 ---
 
-## 📂 Project Structure
-
-```text
-ServiceHub/
-│
-├── Controllers/
-├── Models/
-├── Views/
-├── Data/
-├── Services/
-├── wwwroot/
-│   ├── css/
-│   ├── js/
-│   └── images/
-│
-├── database_schema.sql
-├── appsettings.json
-├── Program.cs
-└── README.md
-```
-
----
-
-## 👥 Team Members
-
-| Member   | Role / Responsibility                       |
-| -------- | ------------------------------------------- |
-| Member 1 | Authentication, User & Customer Module      |
-| Member 2 | Service Provider, Services & Booking Module |
-
-> Each team member will contribute to the project using their individual GitHub account through meaningful commits and development activities.
-
----
-
-## 🔄 Development Workflow
-
-The project will be developed collaboratively using Git and GitHub.
-
-```text
-Planning
-   ↓
-Database Design
-   ↓
-ASP.NET Core MVC Development
-   ↓
-Feature Development
-   ↓
-Testing & Bug Fixing
-   ↓
-GitHub Collaboration
-   ↓
-Documentation
-   ↓
-Final Demonstration
-```
 
 ---
 
@@ -232,31 +141,6 @@ Make sure the following software is installed:
 * Microsoft SQL Server
 * SQL Server Management Studio (SSMS)
 * Git
-
-### Steps
-
-1. Clone the repository.
-
-```bash
-git clone <repository-url>
-```
-
-2. Open the project in Visual Studio.
-
-3. Configure the SQL Server connection string in `appsettings.json`.
-
-4. Create/configure the required database.
-
-5. Restore the required NuGet packages.
-
-6. Build the project.
-
-7. Run the application.
-
-8. Open the application in a web browser.
-
-> Installation and execution instructions will be updated as the project development progresses.
-
 ---
 
 ## 📸 Screenshots
@@ -291,19 +175,6 @@ The following features may be considered for future versions:
 * AI-based service recommendations
 
 ---
-
-## 🎓 Academic Purpose
-
-This project is developed as a **Semester Mini Project for the .NET Technologies course**. It demonstrates practical application of concepts including:
-
-* C#
-* ASP.NET Core MVC
-* ADO.NET
-* Entity Framework Core
-* SQL Server
-* Authentication and Authorization
-* Git and GitHub
-* Web Application Development
 
 ---
 
